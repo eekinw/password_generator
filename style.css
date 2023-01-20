@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: auto;
+}
+
+html, body {
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: auto;
+    min-width: auto;
+    z-index: -1;
+
+}
+
+.bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+
+.container {
+    background-color: rgba(255,255,255,0.5);
+    padding: 3.5rem;
+    border-radius: 1rem;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.numberRange {
+    width: 3rem;
+    height: 1.5rem;
+}
+
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+label {
+    font-weight: bold;
+
+}
+
+.password-display {
+    margin-bottom: 2rem;
+    background-color: white;
+    font-weight: 300;
+    padding: 1.5rem;
+    border: 1px solid #333;
+    border-radius: 1rem;
+    height: 2rem;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    flex-basis: auto;
+    /* if password extends to the end it will automatically move on to the next line*/
+
+}
+
+.characterAmountContainer{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+
+}
+
+.btn {
+    grid-column: span 2;
+    margin: 1rem 0;
+    background-color: transparent;
+    border: 2px solid #333;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: x-large;
+    cursor: pointer;
+    
+}
+
+
+.btn:hover {
+    background-color: #333;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    scale: 1.1;
+}

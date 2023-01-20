@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-image">
+        <img src="./bailey-zindel-NRQV-hBF10M-unsplash.jpg" alt="">
+    </div>
+
+    <div class="container">
+
+        <h2 class="title">Password Generator</h2>
+
+        <h3 id="passwordDisplay" class="password-display"></h3>
+
+        <form class="form" id="passwordForm">
+            <label for="numberOfCharacters">Character Length</label>
+            
+            <div class="characterAmountContainer">
+            <input type="range" min="1" max="20" value="10" id="characterAmountRange">
+            <input class="numberRange" type="number" min="1" max="20" id="characterAmountNumber">
+            </div>
+
+        <input type="checkbox" id="includeUpperCase">
+        <label for="includeUpperCase">Include Uppercase Letters</label>
+
+        <input type="checkbox" id="includeLowerCase">
+        <label for="includeLowerCase">Include Lowercase Letters</label>
+
+        <input type="checkbox" id="includeNumbers">
+        <label for="includeNumbers">Include Numbers</label>
+
+        <input type="checkbox" id="includeSymbols">
+        <label for="includeSymbols">Include Symbols</label>
+
+        <button type="submit" class="btn">Generate!</button>
+    </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
